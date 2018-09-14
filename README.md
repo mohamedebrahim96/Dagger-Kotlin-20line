@@ -26,7 +26,7 @@ class Info  {
     val text = "Hello Dagger 2"
 }
 ```
-<img width="45%" src="test.JPG" />
+<img width="100%" src="test.JPG" />
 
 
 
