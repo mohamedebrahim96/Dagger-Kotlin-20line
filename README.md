@@ -24,3 +24,6 @@ class Info  {
     val text = "Hello Dagger 2"
 }
 ```
+
+
+
