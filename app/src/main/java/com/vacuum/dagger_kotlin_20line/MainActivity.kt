@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //DaggerInfoComponant.create().inject(this)
+        DaggerInfoComponant.create().inject(this)
         text.setText(test.info)
     }
 }
