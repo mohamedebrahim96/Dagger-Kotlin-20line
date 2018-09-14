@@ -25,10 +25,4 @@ class Info  {
 }
 ```
 
-hfdhdfh
-
-
-
-
-
 
