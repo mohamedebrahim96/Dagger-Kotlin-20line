@@ -22,6 +22,9 @@ class Info @Inject constructor(){
 }
 
 
+
+
+
 @Component
 interface InfoComponant{
     fun inject(main:MainActivity)
