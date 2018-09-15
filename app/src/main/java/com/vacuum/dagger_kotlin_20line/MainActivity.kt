@@ -9,7 +9,7 @@ import javax.inject.Named
 class MainActivity : AppCompatActivity() {
 
     @Inject @field:Named("Hi")  lateinit var hi :Info
-    @Inject @field:Named("Hello") lateinit var hello: Info
+    @Inject @field:Named("Named") lateinit var hello: Info
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
