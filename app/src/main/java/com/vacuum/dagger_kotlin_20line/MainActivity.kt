@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
 
 class Info @Inject constructor(){
-    val info = "Hello porn"
+    val info = "Hello Egypt!"
 }
 
 
