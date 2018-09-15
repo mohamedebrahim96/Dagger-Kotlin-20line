@@ -5,3 +5,4 @@ import javax.inject.Inject
 class Ass @Inject constructor() {
     val hall = "this my hall butt"
 }
+
