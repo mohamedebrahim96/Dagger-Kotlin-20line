@@ -2,7 +2,7 @@ package com.vacuum.dagger_kotlin_20line
 
 import dagger.Component
 
-@Component(modules = [InfoModule::class,InfoModule::class])
+@Component
 interface InfoComponant {
     fun poke(main:MainActivity)
 }
