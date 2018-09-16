@@ -4,5 +4,6 @@ import dagger.Component
 
 @Component(modules = [InfoModule::class])
 interface InfoComponant {
-    fun poke(main:MainActivity)
+    fun inject(main:MainActivity)
+
 }

@@ -8,17 +8,16 @@ import javax.inject.Named
 
 class MainActivity : AppCompatActivity() {
 
-    @Inject @field:Named("Hi")  lateinit var hi :Info
-    @Inject @field:Named("Named") lateinit var hello: Info
+    @Inject @field:Named("A")lateinit var a:Info
+    @Inject @field:Named("B")lateinit var b:Info
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-        DaggerInfoComponant.create().poke(this)
-        text.text = "${hi.text}  ${hello.text}"
-
+        DaggerInfoComponant.create().inject(this)
+        text.text = "hi, ${a.test} : ${b.test}"
     }
+
 }
 
