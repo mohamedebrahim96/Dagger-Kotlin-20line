@@ -21,7 +21,6 @@ class TestMainActivity {
 
     @Before
     fun setup2() {
-        //DaggerTestMagicBox.builder().infoModule(TestInfo()).build().inject(this)
         DaggerTestComponant.builder().infoModule(TestInfo()).build().inject(this)
     }
 
