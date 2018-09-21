@@ -11,19 +11,28 @@ To make it more fancier, I can change the Simple Hello World App to Simple Hello
 ```
 class MainActivity : AppCompatActivity() {
 
-    val info = Info()
-
+    @Inject lateinit var test :Info
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        text_view.text = info.text
-
+        DaggerInfoComponant.create().inject(this)
+        text.setText(test.info)
     }
 }
 
-class Info  {
-    val text = "Hello Dagger 2"
+
+
+
+
+class Info @Inject constructor(){
+    val info = "Hello Egypt!"
+}
+
+
+@Component
+interface InfoComponant{
+    fun inject(main:MainActivity)
 }
 ```
 <img width="100%" src="test.JPG" />
